@@ -9,12 +9,19 @@ module.exports = (data, props) => {
     "crossAxisAlignment": "center",
     "children": [
       {
-        "type": "widget",
-        "name": "menu",
+        "type": "button",
+        "text": "long task",
+        "onPressed": {
+          "action": "longtask"
+        }
       },
       {
         "type": "widget",
-        "name": "home"
+        "name": "loader",
+        "coll": "loader",
+        "query": {
+          "user": "@me"
+        }
       }
     ]
   }
